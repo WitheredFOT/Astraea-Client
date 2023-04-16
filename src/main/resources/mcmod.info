@@ -5,7 +5,7 @@
     "description": "A Very Powerful QoL Mod for Hypixel Skyblock.",
     "version": "b0.1",
     "mcversion": "1.8.9",
-    "logoFile": "assets\astraea.png",
+    "logoFile": "assets/astraea.png",
     "url": "",
     "authors": ["DanSavageGames#3445"],
     "credits": "DanSavageGames",
