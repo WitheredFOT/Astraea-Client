@@ -1,15 +1,18 @@
 [
-{
-    "modid": "astraea",
-    "name": "Astraea",
-    "description": "A Very Powerful QoL Mod for Hypixel Skyblock.",
-    "version": "b0.1",
-    "mcversion": "1.8.9",
-    "logoFile": "assets/astraea.png",
+  {
+    "modid": "${modid}",
+    "name": "AstraeaAddons",
+    "description": "A Skyblock mod for all your needs.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
     "url": "",
-    "authors": ["DanSavageGames#3445"],
-    "credits": "DanSavageGames",
+    "updateUrl": "",
+    "authorList": [
+      "DanSavageGames"
+    ],
+    "credits": "Furfsky Reborn Team (Icon)",
+    "logoFile": "/Icons/256x256_Astraea_Icon.png",
     "screenshots": [],
     "dependencies": []
-}
+  }
 ]

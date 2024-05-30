@@ -1,22 +1,27 @@
 package dansavagegames.astraea;
 
-import java.util.concurrent.CopyOnWriteArrayList;
-
-import net.minecraft.client.Minecraft;
+import dansavagegames.astraea.module.ModuleManager;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.EventBus;
 
-@Mod(modid = Info.MODID, name = Info.NAME, version = Info.VERSION) 
+@Mod(
+        modid = "AstraeaAddons",
+        name = "AstraeaAddons",
+        version = "b0.1",
+        useMetadata = true
+)
+
 public class Astraea {
-	
-	public static Minecraft mc = Minecraft.getMinecraft();
 
-	@EventHandler
-	public void init(FMLInitializationEvent event) {
-		System.out.println("AstraeaAddons is now up for use!");
-	}
+    public static EventBus evb = MinecraftForge.EVENT_BUS;
 
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event){
+        evb.register(new ModuleManager());
+        evb.register(this);
+    }
+
+    // Error Phone Library + Checker Framework
 }

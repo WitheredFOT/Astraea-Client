@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "examplemod",
+    "name": "AstraeaAddons",
+    "description": "A Skyblock mod for all your needs.",
+    "version": "1.0.0",
+    "mcversion": "1.8.9",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "DanSavageGames"
+    ],
+    "credits": "Furfsky Reborn Team (Icon)",
+    "logoFile": "/Icons/256x256_Astraea_Icon.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
