@@ -1,6 +1,8 @@
 package dansavagegames.astraea;
 
 import dansavagegames.astraea.module.ModuleManager;
+import dansavagegames.astraea.utils.GuiUtils;
+import dansavagegames.astraea.utils.Utils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,6 +24,4 @@ public class Astraea {
         evb.register(new ModuleManager());
         evb.register(this);
     }
-
-    // Error Phone Library + Checker Framework
 }
