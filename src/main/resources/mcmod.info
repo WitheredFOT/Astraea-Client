@@ -1,16 +1,16 @@
 [
   {
-    "modid": "${modid}",
+    "modid": "",
     "name": "AstraeaAddons",
     "description": "A Skyblock mod for all your needs.",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "",
-    "updateUrl": "",
+    "url": "https://github.com/WitheredFOT/Astraea-Client",
+    "updateUrl": "https://github.com/WitheredFOT/Astraea-Client",
     "authorList": [
       "DanSavageGames"
     ],
-    "credits": "Furfsky Reborn Team (Icon)",
+    "credits": "Furfsky Reborn Team (Icon), nea89's Modding Wiki (Coding the Client), yes (Helping a lot with the Client), Lumina (A boolean)",
     "logoFile": "/Icons/256x256_Astraea_Icon.png",
     "screenshots": [],
     "dependencies": []

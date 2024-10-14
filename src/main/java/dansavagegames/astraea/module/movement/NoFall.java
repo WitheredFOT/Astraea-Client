@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.lwjgl.input.Keyboard;
 
+import static dansavagegames.astraea.utils.ClientUtils.willTakeFallDamage;
 import static dansavagegames.astraea.utils.Utils.isPlayerInWorld;
 
 public class NoFall extends Module {
@@ -14,7 +15,7 @@ public class NoFall extends Module {
     public NoFall(){
         super("NoFall", Category.Movement);
         description = "Attempts to make you not take fall damage";
-        key = Keyboard.KEY_N;
+        cheat = true;
     }
 
     @SubscribeEvent
@@ -28,10 +29,6 @@ public class NoFall extends Module {
     @Override
     public void onDisable(){
         super.onDisable();
-    }
-
-    public boolean willTakeFallDamage(){
-        return (mc.thePlayer.fallDistance > 2);
     }
 
 }

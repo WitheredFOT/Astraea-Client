@@ -3,6 +3,9 @@ package dansavagegames.astraea.utils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
+
 public class Utils {
 
     public static Minecraft mc = Minecraft.getMinecraft();

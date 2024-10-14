@@ -1,8 +1,7 @@
 package dansavagegames.astraea;
 
+import dansavagegames.astraea.command.CommandManager;
 import dansavagegames.astraea.module.ModuleManager;
-import dansavagegames.astraea.utils.GuiUtils;
-import dansavagegames.astraea.utils.Utils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,6 +21,7 @@ public class Astraea {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
         evb.register(new ModuleManager());
+        evb.register(new CommandManager());
         evb.register(this);
     }
 }

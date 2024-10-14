@@ -6,6 +6,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.lwjgl.input.Keyboard;
 
+import static dansavagegames.astraea.utils.Utils.isPlayerInWorld;
+
 public class Flight extends Module {
 
     float velocity = 3;
@@ -13,12 +15,12 @@ public class Flight extends Module {
     public Flight(){
         super("Flight", Category.Movement);
         description = "Allows you to Fly";
-        key = Keyboard.KEY_R;
+        blatant = true; cheat = true;
     }
 
     @SubscribeEvent
     public void onEnable(TickEvent.ClientTickEvent event) {
-        if (event.phase == TickEvent.Phase.END && toggled){
+        if (event.phase == TickEvent.Phase.END && isPlayerInWorld() && toggled){
             mc.thePlayer.capabilities.isFlying = true;
         }
     }
